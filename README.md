@@ -1,3 +1,6 @@
+[README.md](https://github.com/user-attachments/files/33515771/README.md)
+
+
 # Dataset Manager
 
 A Tauri-powered React application for managing, converting, and augmenting computer vision datasets. Supports YOLO, COCO, Pascal VOC, Label Studio, and TFRecord formats.
