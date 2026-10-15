@@ -1,0 +1,36 @@
+[package]
+name = "dataset-manager"
+version = "0.1.0"
+description = "A Tauri-powered React app for managing datasets"
+authors = ["Your Name <you@example.com>"]
+license = "MIT OR Apache-2.0"
+repository = ""
+edition = "2021"
+
+[features]
+custom-protocol = []
+
+[dependencies]
+tauri = { version = "1.5", features = [ "api-all", "dialog" ] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+walkdir = "2"
+image = { version = "0.24", features = ["jpeg", "png", "bmp", "gif", "tiff", "webp"] }
+imageproc = "0.22"
+rayon = "1.10"
+rand = "0.8"
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+anyhow = "1"
+thiserror = "1"
+glob = "0.3"
+notify = "6"
+lazy_static = "1.4"
+quick-xml = { version = "0.31", features = ["serialize"] }
+urlencoding = "2.1"
+base64 = "0.21"
+parking_lot = "0.12"
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
